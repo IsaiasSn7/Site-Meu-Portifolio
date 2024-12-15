@@ -5,17 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaías Sousa - Portifólio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Cutive+Mono&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="flex bg-red-500">
-        <div class="w-[300px] h-[50px]">
-            <img class="max-w-[200px]" src="./img/logo.png" alt="logo">
+    <header class="flex-col">
+        <div class="flex justify-center bg-black">
+            <img class="object-cover w-[300px] h-full bg-blue-500" src="./img/logo-ligth.png" alt="logo">
         </div>
-        <nav>
-            <ul>
+        <hr>
+        <nav class="text-white">
+            <ul class="flex justify-around items-center h-[50px] text-[18px]">
                 <a href="#">
                     <li>Home</li>
                 </a>
@@ -27,8 +35,26 @@
                 </a>
             </ul>
         </nav>
-        <button class="bg-white">Contato</button>
+        <div class="flex justify-center w-full bg-black">
+            <button
+                class="flex items-center justify-center border-2 border-solid border-[#00ffa3] mx-[10px] rounded-[5px] text-[#00ffa3] p-[10px] h-[40px] w-full text-[24px] font-semibold">Contato</button>
+        </div>
     </header>
+
+    <section class="mt-[20px] bg-gray-400 p-[20px]">
+        <div class="flex justify-center items-center gap-[20px]">
+            <img class="justify-cover w-[120px] rounded-full" src="./img/foto-isaias.png" alt="foto-isaias">
+            <div class="border-l-2 h-[100px] border-gray-900"></div>
+            <h1 class="text-[30px] font-bold">Sobre mim</h1>
+        </div>
+        <div class="m-[10px]">
+            <p class="text-justify mt-[15px]">Olá! Meu nome é Isaías e sou fascinado por tecnologia e programação.
+ 
+                Tenho uma forte vontade de trabalhar em equipe e colaborar com outras pessoas para construir projetos inovadores. E estou sempre em busca de desafios que me permitam crescer tanto em técnica quanto profissionalmente.
+                
+                Estou empolgado para seguir nessa jornada de aprendizado e contribuir para o desenvolvimento de soluções que impactem positivamente o mundo da tecnologia.</p>
+        </div>
+    </section>
 </body>
 
 </html>
