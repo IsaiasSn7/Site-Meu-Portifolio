@@ -1,9 +1,17 @@
+// tailwind.config.js
 module.exports = {
-    theme: {
-      extend: {
-        backgroundImage: {
-          'banner': "url('/img/banner.png')",
-        }
-      }
-    }
-  }
+  theme: {
+    extend: {
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-15px)' },
+        },
+      },
+      animation: {
+        float: 'float 3s ease-in-out infinite',
+      },
+    },
+  },
+  plugins: [],
+}
