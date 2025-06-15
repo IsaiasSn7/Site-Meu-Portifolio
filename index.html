@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaías Sousa - Portifólio</title>
 
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,14 +23,34 @@
                             '0%, 100%': { transform: 'translateY(0px)' },
                             '50%': { transform: 'translateY(-8px)' },
                         },
+                        typing: {
+                            from: { width: '0%' },
+                            to: { width: '100%' },
+                        },
+                        blink: {
+                            '0%, 100%': { borderColor: '#00ffa3' },
+                            '50%': { borderColor: 'transparent' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
                     },
                     animation: {
                         float: 'float 3s ease-in-out infinite',
+                        'spin-slow': 'spin 40s linear infinite',
+                        'spin-fast': 'spin 0.5s linear infinite',
+                        typing: 'typing 3s steps(20, end) forwards',
+                        blink: 'blink 0.7s step-end infinite',
+                        fadeIn: 'fadeIn 1s ease-in forwards',
                     },
-                }
-            }
+                },
+            },
         }
+
     </script>
+
+
     <script src="tailwind.config.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -68,64 +89,136 @@
         </nav>
     </header>
 
+    <!-- Barra fixa de redes sociais -->
+    <div
+        class="fixed top-1/2 left-0 transform -translate-y-1/2 z-50 flex flex-col space-y-4 bg-black p-3 rounded-r-lg shadow-lg border-r-2 border-t-2 border-b-2 border-white">
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/00000000000" target="_blank"
+            class="text-white hover:text-[#00ffa3] text-3xl transition-all hover:scale-125">
+            <i class='bx bxl-whatsapp'></i>
+        </a>
+        <hr>
+        <!-- Instagram -->
+        <a href="https://instagram.com" target="_blank"
+            class="text-white hover:text-[#00ffa3] text-3xl transition-all hover:scale-125">
+            <i class='bx bxl-instagram'></i>
+        </a>
+        <hr>
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com" target="_blank"
+            class="text-white hover:text-[#00ffa3] text-3xl transition-all hover:scale-125">
+            <i class='bx bxl-linkedin-square'></i>
+        </a>
+        <hr>
+        <!-- GitHub -->
+        <a href="https://github.com" target="_blank"
+            class="text-white hover:text-[#00ffa3] text-3xl transition-all hover:scale-125">
+            <i class='bx bxl-github'></i>
+        </a>
+
+    </div>
+
+
+
     <!-- sobre mim -->
 
-    <section class="flex justify-center items-center bg-[#808080] relative">
-        <img class="h-[460px] w-full" src="banner.png" alt="banner">
+    <section class="flex justify-center items-center bg-black relative animate-fadeIn">
+        <img class="h-[500px] w-full opacity-40" src="img/banner.png" alt="banner">
         <div class="flex items-center gap-[10%] absolute">
-            <div class="flex flex-col gap-[20px] w-[600px]">
-                <h1
-                    class="text-[65px] font-bold bg-gradient-to-r from-emerald-400 via-lime-500 to-green-700 bg-clip-text text-transparent text-shadow-2xl">
-                    Isaias Sousa</h1>
+            <div class="flex flex-col items-start gap-[20px] w-[600px]">
+                <div>
+                    <h1 class="text-[65px] font-bold bg-gradient-to-r from-emerald-400 via-lime-500 to-green-700 
+           bg-clip-text text-transparent w-fit 
+           overflow-hidden whitespace-nowrap 
+           border-r-2 border-[#00ffa3]
+           animate-typing">
+                        Isaías Sousa
+                    </h1>
+                </div>
+
+
                 <p class="text-white text-shadow-2xl">Olá! Sou Isaías, apaixonado por tecnologia e programação. Gosto de
                     trabalhar em equipe, encarar desafios e estou sempre buscando crescer profissionalmente. Estou
-                    empolgado para aprender e contribuir com soluções inovadoras na área de tecnologia.
+                    empolgado para aprender e contribuir com soluções inovadoras na área tecnologica.
+                </p>
+                <button
+                    class="bg-black text-[#00ffa3] flex items-center justify-center border-2 border-solid border-[#00ffa3] rounded-[5px] hover:bg-[#00ffa3] hover:text-black p-[10px] h-[40px] w-[50%] text-[24px] font-semibold lg:text-[19px] duration-300">Download
+                    CV</button>
             </div>
             <div class="animate-float">
                 <img id="eu"
                     class="w-[400px] rounded-full border-solid border-4 border-[#00ffa3] drop-shadow-lg animate-float"
-                    src="eu.png" alt="eu">
+                    src="img/eu.png" alt="eu">
             </div>
         </div>
-        <!-- <div class="flex flex-col items-center bg-black p-[5%] rounded-[7px] text-white border-2 border-solid border-[#00ffa3] lg:flex lg:m-[5%] lg:flex-col lg:items-center lg:gap-[1%] absolute">
-            <div class="flex justify-center justify-center gap-[20px] lg:flex-col">
-                <img class="justify-cover w-[100px] rounded-full" src="./img/foto-isaias.png" alt="foto-isaias">
-                <div class="border-l-2 h-[100px] border-[#00ffa3] lg:hidden"></div>
-                <div class="flex flex-col justify-center">
-                    <h1 class="text-[26px] font-semibold">sou</h1>
-                    <h1 class="text-[26px] text-[#00ffa3] font-bold">Isaías Sousa</h1>
-                </div>
-            </div>
-            <div class="m-[10px] lg:w-[50%]">
-                <p class="text-justify mt-[15px]">Olá! Meu nome é Isaías e sou fascinado por tecnologia e
-                    programação.
 
-                    Tenho uma forte vontade de trabalhar em equipe e colaborar com outras pessoas para construir
-                    projetos
-                    inovadores. E estou sempre em busca de desafios que me permitam crescer tanto em técnica quanto
-                    profissionalmente.
-
-                    Estou empolgado para seguir nessa jornada de aprendizado e contribuir para o desenvolvimento de
-                    soluções
-                    que impactem positivamente o mundo da tecnologia.</p>
-            </div>
-        </div> -->
     </section>
 
     <!-- Stacks -->
 
-    <section class="flex justify-center gap-[20px] lg:flex-col p-[5%]">
-        <div class="flex flex-col justify-center gap-[10px] lg:flex-row lg:gap-[10%] lg:mb-[5%]">
-            <img class="w-[150px] h-[150px]" src="./img/stack-html.png" alt="stack-html">
-            <img class="w-[150px] h-[150px]" src="./img/stack-tw.png" alt="stack-tw">
-            <img class="w-[150px] h-[150px]" src="./img/stack-react.png" alt="stack-rt">
+    <section class="felx items-center justify-center h-[150px]">
+
+        <div class="flex items-center justify-center h-full gap-[5%] animate-fadeIn">
+
+            <div class="flex items-center justify-center relative w-[90px] h-[90px] group">
+                <img class="absolute w-[100px] animate-spin-slow opacity-100 group-hover:opacity-0 transition-opacity  duration-300"
+                    src="./img/Fundo-stack.png" alt="Fundo padrão" />
+                <img class="absolute w-[100px] animate-spin-slow opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    src="./img/Fundo-stack-green.png" alt="Fundo ao hover" />
+                <img class="w-[100px] absolute z-10" src="./img/stack-html.png" alt="Node logo" />
+            </div>
+
+            <div class="flex items-center justify-center relative w-[90px] h-[90px] group">
+                <img class="absolute w-[100px] animate-spin-slow opacity-100 group-hover:opacity-0 transition-opacity  duration-300"
+                    src="./img/Fundo-stack.png" alt="Fundo padrão" />
+                <img class="absolute w-[100px] animate-spin-slow opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    src="./img/Fundo-stack-green.png" alt="Fundo ao hover" />
+                <img class="w-[100px] absolute z-10" src="./img/stack-react.png" alt="Node logo" />
+            </div>
+
+            <div class="flex items-center justify-center relative w-[90px] h-[90px] group">
+                <img class="absolute w-[100px] animate-spin-slow opacity-100 group-hover:opacity-0 transition-opacity  duration-300"
+                    src="./img/Fundo-stack.png" alt="Fundo padrão" />
+                <img class="absolute w-[100px] animate-spin-slow opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    src="./img/Fundo-stack-green.png" alt="Fundo ao hover" />
+                <img class="w-[100px] absolute z-10" src="./img/stack-css.png" alt="Node logo" />
+            </div>
+
+            <div class="flex items-center justify-center relative w-[90px] h-[90px] group">
+                <img class="absolute w-[100px] animate-spin-slow opacity-100 group-hover:opacity-0 transition-opacity  duration-300"
+                    src="./img/Fundo-stack.png" alt="Fundo padrão" />
+                <img class="absolute w-[100px] animate-spin-slow opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    src="./img/Fundo-stack-green.png" alt="Fundo ao hover" />
+                <img class="w-[100px] absolute z-10" src="./img/stack-js.png" alt="Node logo" />
+            </div>
+
+            <div class="flex items-center justify-center relative w-[90px] h-[90px] group">
+                <img class="absolute w-[100px] animate-spin-slow opacity-100 group-hover:opacity-0 transition-opacity  duration-300"
+                    src="./img/Fundo-stack.png" alt="Fundo padrão" />
+                <img class="absolute w-[100px] animate-spin-slow opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    src="./img/Fundo-stack-green.png" alt="Fundo ao hover" />
+                <img class="w-[100px] absolute z-10" src="./img/stack-tailwind.png" alt="Node logo" />
+            </div>
+
+            <div class="flex items-center justify-center relative w-[90px] h-[90px] group">
+                <img class="absolute w-[100px] animate-spin-slow opacity-100 group-hover:opacity-0 transition-opacity  duration-300"
+                    src="./img/Fundo-stack.png" alt="Fundo padrão" />
+                <img class="absolute w-[100px] animate-spin-slow opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    src="./img/Fundo-stack-green.png" alt="Fundo ao hover" />
+                <img class="w-[100px] absolute z-10" src="./img/stack-node.png" alt="Node logo" />
+            </div>
+
         </div>
-        <div class="flex flex-col justify-center gap-[10px] lg:flex-row lg:gap-[10%]">
-            <img class="w-[150px] h-[150px]" src="./img/stack-js.png" alt="stack-js">
-            <img class="w-[150px] h-[150px]" src="./img/stack-css.png" alt="stack-css">
-            <img class="w-[150px] h-[150px]" src="./img/stack-node.png" alt="stack-nd">
-        </div>
+
     </section>
+
+    <!-- <section class="w-full">
+        <h1 class="text-white absolute">Projetos</h1>
+        <img class="w-full" src="./img/banner2.png" alt="banner2">
+    </section> -->
+
+
 </body>
 
 </html>
