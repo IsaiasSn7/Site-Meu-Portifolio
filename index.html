@@ -91,7 +91,7 @@
 
     <!-- Barra fixa de redes sociais -->
     <div
-        class="fixed top-1/2 left-0 transform -translate-y-1/2 z-50 flex flex-col space-y-4 bg-black p-3 rounded-r-lg shadow-lg border-r-2 border-t-2 border-b-2 border-white">
+        class="fixed top-1/2 left-0 transform -translate-y-1/2 z-50 flex flex-col space-y-4 backdrop-blur-3xl p-3 rounded-r-lg shadow-lg border-r-2 border-t-2 border-b-2 border-white">
 
         <!-- WhatsApp -->
         <a href="https://wa.me/00000000000" target="_blank"
@@ -213,89 +213,250 @@
 
     </section>
 
-    <section class="w-full flex justify-center py-[5%]">
+    <!-- projetos -->
 
-        <h1 class="text-white text-[60px] absolute">Projetos</h1>
+    <section class="w-full flex justify-center">
 
-        <div class="absolute my-[10%] flex gap-[3%]">
+        <h1 class="text-white text-[70px] absolute my-[5%]">Projetos</h1>
 
-            <div class="border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-110">
-                <!-- Sombra preta de baixo para cima -->
+        <div class="absolute my-[17%] grid grid-cols-3 gap-[5%] gap-y-[5%]">
+
+            <div
+                class="group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-110">
+                <!-- Texto oculto por padrão, aparece no hover -->
+                <h1
+                    class="absolute z-20 text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
+                    tiamate
+                </h1>
+
                 <div
                     class="absolute bottom-0 left-0 w-full h-[75%] bg-gradient-to-t from-black to-transparent pointer-events-none z-10">
                 </div>
-                <div class="absolute mt-[50%] flex items-center gap-[10px] h-[30px]">
+
+                <div class="absolute mt-[50%] flex items-center gap-[10px] h-[30px] z-30">
                     <!-- Ícone do GitHub -->
                     <div class="z-20 transition-all hover:scale-110">
                         <a href="https://github.com" target="_blank"
-                            class="text-[#00ffa3] text-3xl transition-all hover:scale-110">
-                            <i class='bx bxl-github'></i>
-                        </a>
+                            class="text-[#00ffa3] text-3xl duration-700 hover:scale-150"><i
+                                class="bx bxl-github"></i></a>
                     </div>
-                    <button class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-2 border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[5px] h-[90%] w-full text-[12px] font-semibold duration-300">Veja Mais</button>
+
+                    <a class="z-10" href="https://isaiassn7.github.io/buscador-de-cep/" target="_blank">
+                        <button
+                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
+                            Veja Mais
+                        </button>
+                    </a>
                 </div>
+
                 <!-- Imagem -->
-                <img class="w-[300px] h-[200px] rounded-[3px]" src="./img/tiamate.jpg" alt="tiamate">
+                <img class="w-[300px] h-[200px] rounded-[3px] hover:opacity-20 transition-opacity duration-300"
+                    src="./img/tiamate.jpg" alt="tiamate" />
             </div>
 
 
-            <div class="border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-110">
-                <!-- Sombra preta de baixo para cima -->
+
+            <div
+                class="group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-110">
+                <!-- Texto oculto por padrão, aparece no hover -->
+                <h1
+                    class="absolute z-20 text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
+                    buscador de cep
+                </h1>
+
                 <div
                     class="absolute bottom-0 left-0 w-full h-[75%] bg-gradient-to-t from-black to-transparent pointer-events-none z-10">
                 </div>
-                <div class="absolute mt-[50%] flex items-center gap-[10px] h-[30px]">
+
+                <div class="absolute mt-[50%] flex items-center gap-[10px] h-[30px] z-30">
                     <!-- Ícone do GitHub -->
                     <div class="z-20 transition-all hover:scale-110">
                         <a href="https://github.com" target="_blank"
-                            class="text-[#00ffa3] text-3xl transition-all hover:scale-110">
-                            <i class='bx bxl-github'></i>
-                        </a>
+                            class="text-[#00ffa3] text-3xl duration-700 hover:scale-150"><i
+                                class="bx bxl-github"></i></a>
                     </div>
-                    <button class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-2 border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[5px] h-[90%] w-full text-[12px] font-semibold duration-300">Veja Mais</button>
+
+                    <a class="z-10" href="https://isaiassn7.github.io/buscador-de-cep/" target="_blank">
+                        <button
+                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
+                            Veja Mais
+                        </button>
+                    </a>
                 </div>
+
                 <!-- Imagem -->
-                <img class="w-[300px] h-[200px] rounded-[3px]" src="./img/tiamate.jpg" alt="tiamate">
+                <img class="w-[300px] h-[200px] rounded-[3px] hover:opacity-20 transition-opacity duration-300"
+                    src="./img/buscador-cep.png" alt="tiamate" />
             </div>
 
+            <div
+                class="group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-110">
+                <!-- Texto oculto por padrão, aparece no hover -->
+                <h1
+                    class="absolute z-20 text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
+                    buscador de cep
+                </h1>
 
-            <div class="border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-110">
-                <!-- Sombra preta de baixo para cima -->
                 <div
                     class="absolute bottom-0 left-0 w-full h-[75%] bg-gradient-to-t from-black to-transparent pointer-events-none z-10">
                 </div>
-                <div class="absolute mt-[50%] flex items-center gap-[10px] h-[30px]">
+
+                <div class="absolute mt-[50%] flex items-center gap-[10px] h-[30px] z-30">
                     <!-- Ícone do GitHub -->
                     <div class="z-20 transition-all hover:scale-110">
                         <a href="https://github.com" target="_blank"
-                            class="text-[#00ffa3] text-3xl transition-all hover:scale-110">
-                            <i class='bx bxl-github'></i>
-                        </a>
+                            class="text-[#00ffa3] text-3xl duration-700 hover:scale-150"><i
+                                class="bx bxl-github"></i></a>
                     </div>
-                    <button class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-2 border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[5px] h-[90%] w-full text-[12px] font-semibold duration-300">Veja Mais</button>
+
+                    <a class="z-10" href="https://isaiassn7.github.io/buscador-de-cep/" target="_blank">
+                        <button
+                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
+                            Veja Mais
+                        </button>
+                    </a>
                 </div>
+
                 <!-- Imagem -->
-                <img class="w-[300px] h-[200px] rounded-[3px]" src="./img/tiamate.jpg" alt="tiamate">
+                <img class="w-[300px] h-[200px] rounded-[3px] hover:opacity-20 transition-opacity duration-300"
+                    src="./img/buscador-cep.png" alt="tiamate" />
             </div>
 
-            <div class="border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-110">
-                <!-- Sombra preta de baixo para cima -->
+            <div
+                class="group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-110">
+                <!-- Texto oculto por padrão, aparece no hover -->
+                <h1
+                    class="absolute z-20 text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
+                    buscador de cep
+                </h1>
+
                 <div
                     class="absolute bottom-0 left-0 w-full h-[75%] bg-gradient-to-t from-black to-transparent pointer-events-none z-10">
                 </div>
-                <div class="absolute mt-[50%] flex items-center gap-[10px] h-[30px]">
+
+                <div class="absolute mt-[50%] flex items-center gap-[10px] h-[30px] z-30">
                     <!-- Ícone do GitHub -->
                     <div class="z-20 transition-all hover:scale-110">
                         <a href="https://github.com" target="_blank"
-                            class="text-[#00ffa3] text-3xl transition-all hover:scale-110">
-                            <i class='bx bxl-github'></i>
-                        </a>
+                            class="text-[#00ffa3] text-3xl duration-700 hover:scale-150"><i
+                                class="bx bxl-github"></i></a>
                     </div>
-                    <button class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-2 border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[5px] h-[90%] w-full text-[12px] font-semibold duration-300">Veja Mais</button>
+
+                    <a class="z-10" href="https://isaiassn7.github.io/buscador-de-cep/" target="_blank">
+                        <button
+                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
+                            Veja Mais
+                        </button>
+                    </a>
                 </div>
+
                 <!-- Imagem -->
-                <img class="w-[300px] h-[200px] rounded-[3px]" src="./img/tiamate.jpg" alt="tiamate">
+                <img class="w-[300px] h-[200px] rounded-[3px] hover:opacity-20 transition-opacity duration-300"
+                    src="./img/buscador-cep.png" alt="tiamate" />
             </div>
+
+            <div
+                class="group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-110">
+                <!-- Texto oculto por padrão, aparece no hover -->
+                <h1
+                    class="absolute z-20 text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
+                    buscador de cep
+                </h1>
+
+                <div
+                    class="absolute bottom-0 left-0 w-full h-[75%] bg-gradient-to-t from-black to-transparent pointer-events-none z-10">
+                </div>
+
+                <div class="absolute mt-[50%] flex items-center gap-[10px] h-[30px] z-30">
+                    <!-- Ícone do GitHub -->
+                    <div class="z-20 transition-all hover:scale-110">
+                        <a href="https://github.com" target="_blank"
+                            class="text-[#00ffa3] text-3xl duration-700 hover:scale-150"><i
+                                class="bx bxl-github"></i></a>
+                    </div>
+
+                    <a class="z-10" href="https://isaiassn7.github.io/buscador-de-cep/" target="_blank">
+                        <button
+                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
+                            Veja Mais
+                        </button>
+                    </a>
+                </div>
+
+                <!-- Imagem -->
+                <img class="w-[300px] h-[200px] rounded-[3px] hover:opacity-20 transition-opacity duration-300"
+                    src="./img/buscador-cep.png" alt="tiamate" />
+            </div>
+
+            <div
+                class="group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-110">
+                <!-- Texto oculto por padrão, aparece no hover -->
+                <h1
+                    class="absolute z-20 text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
+                    buscador de cep
+                </h1>
+
+                <div
+                    class="absolute bottom-0 left-0 w-full h-[75%] bg-gradient-to-t from-black to-transparent pointer-events-none z-10">
+                </div>
+
+                <div class="absolute mt-[50%] flex items-center gap-[10px] h-[30px] z-30">
+                    <!-- Ícone do GitHub -->
+                    <div class="z-20 transition-all hover:scale-110">
+                        <a href="https://github.com" target="_blank"
+                            class="text-[#00ffa3] text-3xl duration-700 hover:scale-150"><i
+                                class="bx bxl-github"></i></a>
+                    </div>
+
+                    <a class="z-10" href="https://isaiassn7.github.io/buscador-de-cep/" target="_blank">
+                        <button
+                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
+                            Veja Mais
+                        </button>
+                    </a>
+                </div>
+
+                <!-- Imagem -->
+                <img class="w-[300px] h-[200px] rounded-[3px] hover:opacity-20 transition-opacity duration-300"
+                    src="./img/buscador-cep.png" alt="tiamate" />
+            </div>
+
+            <div
+                class="group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-110">
+                <!-- Texto oculto por padrão, aparece no hover -->
+                <h1
+                    class="absolute z-20 text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
+                    buscador de cep
+                </h1>
+
+                <div
+                    class="absolute bottom-0 left-0 w-full h-[75%] bg-gradient-to-t from-black to-transparent pointer-events-none z-10">
+                </div>
+
+                <div class="absolute mt-[50%] flex items-center gap-[10px] h-[30px] z-30">
+                    <!-- Ícone do GitHub -->
+                    <div class="z-20 transition-all hover:scale-110">
+                        <a href="https://github.com" target="_blank"
+                            class="text-[#00ffa3] text-3xl duration-700 hover:scale-150"><i
+                                class="bx bxl-github"></i></a>
+                    </div>
+
+                    <a class="z-10" href="https://isaiassn7.github.io/buscador-de-cep/" target="_blank">
+                        <button
+                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
+                            Veja Mais
+                        </button>
+                    </a>
+                </div>
+
+                <!-- Imagem -->
+                <img class="w-[300px] h-[200px] rounded-[3px] hover:opacity-20 transition-opacity duration-300"
+                    src="./img/buscador-cep.png" alt="tiamate" />
+            </div>
+
+
+
+            
 
         </div>
 
