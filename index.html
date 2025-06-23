@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -65,17 +65,17 @@
         <hr class="lg:hidden">
         <nav class="lg:flex lg:items-center gap-[50px]">
             <ul class="flex justify-around items-center h-[50px] text-[18px] text-white gap-[50px]">
-                <a href="#">
+                <a href="#Sobre">
                     <li
                         class="hover:text-[#00ffa3] relative text-white hover:text-[#00ffa3] cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#00ffa3] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#00ffa3] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
                         Sobre</li>
                 </a>
-                <a href="#">
+                <a href="#Stacks">
                     <li
                         class="hover:text-[#00ffa3] relative text-white hover:text-[#00ffa3] cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#00ffa3] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#00ffa3] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
                         Stacks</li>
                 </a>
-                <a href="#">
+                <a href="#Projetos">
                     <li
                         class="hover:text-[#00ffa3] relative text-white hover:text-[#00ffa3] cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#00ffa3] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#00ffa3] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
                         Projetos</li>
@@ -83,8 +83,9 @@
             </ul>
 
             <div class="flex justify-center w-full bg-black lg:w-[150px]">
-                <button
-                    class="bg-[#00ffa3] text-black flex items-center justify-center border-2 border-solid border-[#00ffa3] mx-[10px] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[10px] h-[40px] w-full text-[24px] font-semibold lg:text-[19px] duration-300">Contato</button>
+                <a href="https://wa.me/+55085988786832" target="_blank"><button
+                        class="bg-[#00ffa3] text-black flex items-center justify-center border-2 border-solid border-[#00ffa3] mx-[10px] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[10px] h-[40px] w-full text-[24px] font-semibold lg:text-[19px] duration-300">Contato</button>
+                </a>
             </div>
         </nav>
     </header>
@@ -94,25 +95,25 @@
         class="fixed top-1/2 left-0 transform -translate-y-1/2 z-50 flex flex-col space-y-4 backdrop-blur-3xl p-3 rounded-r-lg shadow-lg border-r-2 border-t-2 border-b-2 border-white">
 
         <!-- WhatsApp -->
-        <a href="https://wa.me/00000000000" target="_blank"
+        <a href="https://wa.me/+55085988786832" target="_blank"
             class="text-white hover:text-[#00ffa3] text-3xl transition-all hover:scale-125">
             <i class='bx bxl-whatsapp'></i>
         </a>
         <hr>
         <!-- Instagram -->
-        <a href="https://instagram.com" target="_blank"
+        <a href="https://www.instagram.com/isaias_snunes/" target="_blank"
             class="text-white hover:text-[#00ffa3] text-3xl transition-all hover:scale-125">
             <i class='bx bxl-instagram'></i>
         </a>
         <hr>
         <!-- LinkedIn -->
-        <a href="https://linkedin.com" target="_blank"
+        <a href="https://www.linkedin.com/in/isaias-sousa-2994a6199/" target="_blank"
             class="text-white hover:text-[#00ffa3] text-3xl transition-all hover:scale-125">
             <i class='bx bxl-linkedin-square'></i>
         </a>
         <hr>
         <!-- GitHub -->
-        <a href="https://github.com" target="_blank"
+        <a href="https://github.com/IsaiasSn7" target="_blank"
             class="text-white hover:text-[#00ffa3] text-3xl transition-all hover:scale-125">
             <i class='bx bxl-github'></i>
         </a>
@@ -123,7 +124,7 @@
 
     <!-- sobre mim -->
 
-    <section class="flex justify-center items-center bg-black relative animate-fadeIn">
+    <section id="Sobre" class="flex justify-center items-center bg-black relative animate-fadeIn">
         <img class="h-[530px] w-full opacity-40" src="img/banner.png" alt="banner">
         <div class="flex items-center gap-[10%] absolute">
             <div class="flex flex-col items-start gap-[20px] w-[600px]">
@@ -157,7 +158,7 @@
 
     <!-- Stacks -->
 
-    <section class="felx items-center justify-center h-[120px] w-full h-64 bg-gradient-to-b from-black via-black to-gray-900">
+    <section id="Stacks" class="h-[120px] w-full h-64 bg-gradient-to-b from-black via-black to-gray-900">
 
         <div class="flex items-center justify-center h-full gap-[6%] animate-fadeIn">
 
@@ -216,14 +217,15 @@
 
     <!-- projetos -->
 
-    <section class="w-full flex justify-center">
+    <section id="Projetos"
+        class="w-full flex justify-center relative bg-gradient-to-b from-black via-black to-gray-900">
 
         <h1 class="text-white text-[70px] absolute my-[5%]">Projetos</h1>
 
-        <div class="absolute my-[17%] grid grid-cols-4 gap-[3%] gap-y-[8%]">
+        <div class="my-[17%] grid grid-cols-4 gap-[3%] gap-y-[8%]">
 
             <div
-                class="group border-2 border-c rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-105">
+                class="group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-105">
                 <!-- Texto oculto por padrão, aparece no hover -->
                 <h1
                     class="absolute z-20 text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
@@ -237,12 +239,12 @@
                 <div class="absolute mt-[50%] flex items-center gap-[10px] h-[30px] z-30">
                     <!-- Ícone do GitHub -->
                     <div class="z-20 transition-all hover:scale-110">
-                        <a href="https://github.com" target="_blank"
+                        <a href="https://github.com/IsaiasSn7/projeto-tiamate/tree/development" target="_blank"
                             class="text-[#00ffa3] text-3xl duration-700 hover:scale-150"><i
                                 class="bx bxl-github"></i></a>
                     </div>
 
-                    <a class="z-10" href="https://isaiassn7.github.io/buscador-de-cep/" target="_blank">
+                    <a class="z-10" href="https://site-tiamate.vercel.app/" target="_blank">
                         <button
                             class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
                             Veja Mais
@@ -251,7 +253,7 @@
                 </div>
 
                 <!-- Imagem -->
-                <img class="w-[300px] h-[200px] rounded-[3px] hover:opacity-20 transition-opacity duration-300"
+                <img class="w-[300px] h-[200px] rounded-[3px] hover:opacity-20 transition-opacity duration-300 object-cover"
                     src="./img/tiamate.jpg" alt="tiamate" />
             </div>
 
@@ -272,7 +274,7 @@
                 <div class="absolute mt-[50%] flex items-center gap-[10px] h-[30px] z-30">
                     <!-- Ícone do GitHub -->
                     <div class="z-20 transition-all hover:scale-110">
-                        <a href="https://github.com" target="_blank"
+                        <a href="https://github.com/IsaiasSn7/buscador-de-cep" target="_blank"
                             class="text-[#00ffa3] text-3xl duration-700 hover:scale-150"><i
                                 class="bx bxl-github"></i></a>
                     </div>
@@ -286,8 +288,41 @@
                 </div>
 
                 <!-- Imagem -->
-                <img class="w-[300px] h-[200px] rounded-[3px] hover:opacity-20 transition-opacity duration-300"
-                    src="./img/buscador-cep.png" alt="tiamate" />
+                <img class="w-[300px] h-[200px] rounded-[3px] hover:opacity-20 transition-opacity duration-300 object-cover"
+                    src="./img/buscador-cep.png" alt="buscador-de-cep" />
+            </div>
+
+            <div
+                class="group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-105">
+                <!-- Texto oculto por padrão, aparece no hover -->
+                <h1
+                    class="absolute z-20 text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
+                    Calculadora
+                </h1>
+
+                <div
+                    class="absolute bottom-0 left-0 w-full h-[75%] bg-gradient-to-t from-black to-transparent pointer-events-none z-10">
+                </div>
+
+                <div class="absolute mt-[50%] flex items-center gap-[10px] h-[30px] z-30">
+                    <!-- Ícone do GitHub -->
+                    <div class="z-20 transition-all hover:scale-110">
+                        <a href="https://github.com/IsaiasSn7/Projeto-Calculadora" target="_blank"
+                            class="text-[#00ffa3] text-3xl duration-700 hover:scale-150"><i
+                                class="bx bxl-github"></i></a>
+                    </div>
+
+                    <a class="z-10" href="https://isaiassn7.github.io/Projeto-Calculadora/" target="_blank">
+                        <button
+                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
+                            Veja Mais
+                        </button>
+                    </a>
+                </div>
+
+                <!-- Imagem -->
+                <img class="w-[300px] h-[200px] rounded-[3px] hover:opacity-20 transition-opacity duration-300 object-cover"
+                    src="./img/calculadora.png" alt="tiamate" />
             </div>
 
             <div
@@ -422,49 +457,77 @@
                     src="./img/buscador-cep.png" alt="tiamate" />
             </div>
 
-            <div
-                class="group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-105">
-                <!-- Texto oculto por padrão, aparece no hover -->
-                <h1
-                    class="absolute z-20 text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
-                    buscador de cep
-                </h1>
-
-                <div
-                    class="absolute bottom-0 left-0 w-full h-[75%] bg-gradient-to-t from-black to-transparent pointer-events-none z-10">
-                </div>
-
-                <div class="absolute mt-[50%] flex items-center gap-[10px] h-[30px] z-30">
-                    <!-- Ícone do GitHub -->
-                    <div class="z-20 transition-all hover:scale-110">
-                        <a href="https://github.com" target="_blank"
-                            class="text-[#00ffa3] text-3xl duration-700 hover:scale-150"><i
-                                class="bx bxl-github"></i></a>
-                    </div>
-
-                    <a class="z-10" href="https://isaiassn7.github.io/buscador-de-cep/" target="_blank">
-                        <button
-                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
-                            Veja Mais
-                        </button>
-                    </a>
-                </div>
-
-                <!-- Imagem -->
-                <img class="w-[300px] h-[200px] rounded-[3px] hover:opacity-20 transition-opacity duration-300"
-                    src="./img/buscador-cep.png" alt="tiamate" />
-            </div>
 
 
 
-            
 
         </div>
 
-        <!-- <img class="w-full" src="./img/banner-projetos.png" alt="banner2"> -->
+
     </section>
 
 
 </body>
+
+<footer class="flex flex-col justify-center items-center pt-[2%]">
+    <div class="flex justify-center items-center gap-[450px]">
+        <div class="flex justify-center items-center">
+            <img class="w-[300px]" src="/img/logo-ligth.png" alt="">
+        </div>
+        <div class="flex justify-center items-center gap-32 text-[20px] text-white font-light">
+            <a href="#Sobre">
+                <h1 class="hover:text-[#00ffa3] hover:scale-110 duration-300">Sobre</h1>
+            </a>
+            <a href="#Stacks">
+                <h1 class="hover:text-[#00ffa3] hover:scale-110 duration-300">Stacks</h1>
+            </a>
+            <a href="#Projetos">
+                <h1 class="hover:text-[#00ffa3] hover:scale-110 duration-300">Projetos</h1>
+            </a>
+        </div>
+    </div>
+
+    <hr class="w-[90%] border-t border-gray-600 my-[2%]">
+
+    <div class="flex gap-8">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/+55085988786832" class="w-10 h-10 flex items-center justify-center
+               text-white hover:text-[#00ffa3] text-2xl
+               transition-all hover:scale-110
+               bg-black/30 hover:border-[#00ffa3]
+               rounded-full border border-white" target="_blank">
+            <i class='bx bxl-whatsapp'></i>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/isaias_snunes/" class="w-10 h-10 flex items-center justify-center
+               text-white hover:text-[#00ffa3] text-2xl
+               transition-all hover:scale-110
+               bg-black/30 hover:border-[#00ffa3]
+               rounded-full border border-white" target="_blank">
+            <i class='bx bxl-instagram'></i>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/isaias-sousa-2994a6199/" class="w-10 h-10 flex items-center justify-center
+               text-white hover:text-[#00ffa3] text-2xl
+               transition-all hover:scale-110
+               bg-black/30 hover:border-[#00ffa3]
+               rounded-full border border-white" target="_blank">
+            <i class='bx bxl-linkedin-square'></i>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/IsaiasSn7" class="w-10 h-10 flex items-center justify-center
+               text-white hover:text-[#00ffa3] text-2xl
+               transition-all hover:scale-110
+               bg-black/30 hover:border-[#00ffa3]
+               rounded-full border border-white" target="_blank">
+            <i class='bx bxl-github'></i>
+        </a>
+    </div>
+    <h1 class="text-white mt-[3%]">© 2025 Isaías Sousa. Todos os direitos reservados.</h1>
+
+</footer>
 
 </html>
