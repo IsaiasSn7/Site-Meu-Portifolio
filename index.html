@@ -58,7 +58,7 @@
 <!-- cabeçalho -->
 
 <body class="bg-black">
-    <header class="flex-col mb-[5%] lg:flex lg:flex-row lg:items-center xl:h-[90px] lg:justify-between mx-[5%]">
+    <header class="flex-col py-auto lg:flex lg:flex-row lg:items-center mb-[30px] lg:h-[80px] xl:h-[100px] lg:justify-between mx-[5%]">
         <div class="flex justify-center items-center bg-black">
             <img class="object-cover w-[300px] h-full lg:w-[200px]" src="./img/logo-ligth.png" alt="logo">
         </div>
@@ -84,7 +84,7 @@
 
             <div class="flex justify-center w-full bg-black lg:w-[150px]">
                 <a href="https://wa.me/+55085988786832" target="_blank"><button
-                        class="bg-[#00ffa3] text-black flex items-center justify-center w-[350px] border-2 border-solid border-[#00ffa3] mx-[10px] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[10px] h-[40px] xl:w-full text-[24px] font-semibold lg:text-[19px] duration-300">Contato</button>
+                        class="bg-[#00ffa3] text-black flex items-center justify-center w-[350px] lg:w-[150px] border-2 border-solid border-[#00ffa3] mx-[10px] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[10px] h-[40px] xl:w-full text-[24px] font-semibold lg:text-[19px] duration-300">Contato</button>
                 </a>
             </div>
         </nav>
@@ -125,11 +125,11 @@
     <!-- sobre mim -->
 
     <section id="Sobre" class="flex justify-center items-center bg-black relative animate-fadeIn">
-        <img class="h-[670px] w-full opacity-40 xl:h-[530px]" src="img/banner.png" alt="banner">
-        <div class="flex flex-col-reverse xl:flex-row items-center gap-[25px] xl:gap-[10%] absolute">
-            <div class="flex flex-col items-center gap-[20px] mx-[15%] text-center xl:w-[600px] xl:items-start">
+        <img class="h-[670px] w-full opacity-40 lg:h-[470px] xl:h-[500px]" src="img/banner.png" alt="banner">
+        <div class="flex flex-col-reverse lg:flex-row items-center lg:justify-around gap-[25px] lg:gap-[15px] xl:gap-[20%] absolute">
+            <div class="flex flex-col items-center gap-[20px] lg:gap-[15px] mx-[15%] lg:mx-[0%] text-center xl:w-[600px] lg:w-[30%] lg:items-start">
                 <div class="flex flex-col ">
-                    <h1 class="text-[50px] text-center xl:text-[65px] font-bold bg-gradient-to-r from-emerald-400 via-lime-500 to-green-700 
+                    <h1 class="text-[50px] text-center lg:text-[65px] font-bold bg-gradient-to-r from-emerald-400 via-lime-500 to-green-700 
            bg-clip-text text-transparent w-fit 
            overflow-hidden whitespace-nowrap 
            border-r-2 border-[#00ffa3]
@@ -139,17 +139,17 @@
                 </div>
 
 
-                <p class="text-[15px] text-justify text-white text-shadow-2xl">Olá! Sou Isaías, apaixonado por tecnologia e programação. Gosto de
+                <p class="text-[15px] text-justify lg:text-start text-white text-shadow-2xl">Olá! Sou Isaías, apaixonado por tecnologia e programação. Gosto de
                     trabalhar em equipe, encarar desafios e estou sempre buscando crescer profissionalmente. Estou
                     empolgado para aprender e contribuir com soluções inovadoras na área tecnologica.
                 </p>
                 <button
-                    class="bg-black text-[#00ffa3] flex items-center justify-center border-2 border-solid border-[#00ffa3] rounded-[5px] hover:bg-[#00ffa3] hover:text-black p-[10px] h-[40px] w-[90%] xl:w-[50%] text-[24px] font-semibold xl:text-[19px] duration-300" onclick="baixarPDF()">Download
+                    class="bg-black text-[#00ffa3] flex items-center justify-center border-2 border-solid border-[#00ffa3] rounded-[5px] hover:bg-[#00ffa3] hover:text-black p-[10px] h-[40px] w-[90%] lg:w-[50%] text-[24px] font-semibold lg:text-[19px] duration-300" onclick="baixarPDF()">Download
                     CV</button>
             </div>
             <div class="flex justify-center animate-float">
                 <img id="eu"
-                    class="w-[60%] xl:w-[400px] rounded-full border-solid border-4 border-[#00ffa3] drop-shadow-lg animate-float"
+                    class="w-[60%] lg:w-[320px] xl:w-[450px] rounded-full border-solid border-4 border-[#00ffa3] drop-shadow-lg animate-float"
                     src="img/eu.png" alt="eu">
             </div>
         </div>
@@ -158,9 +158,9 @@
 
     <!-- Stacks -->
 
-    <section id="Stacks" class="h-[90px] py-[5%] xl:h-[120px] w-full h-full bg-gradient-to-b from-black via-black to-gray-900">
+    <section id="Stacks" class="h-[90px] lg:h-[80px] py-[5%] xl:py-[5%] md:h-[120px] w-full h-full bg-gradient-to-b from-black via-black to-gray-900">
 
-        <div class="grid grid-cols-3 gap-4 xl:flex xl:items-center xl:justify-center h-full mx-[15%] xl:gap-[6%] animate-fadeIn">
+        <div class="grid grid-cols-3 place-items-center gap-4 md:flex md:items-center md:justify-center h-full mx-[15%] md:mx-[10%] lg:mx-[0%] md:gap-[6%] animate-fadeIn">
 
             <div class="flex items-center justify-center relative w-[90px] h-[90px] group">
                 <img class="absolute w-[100px] animate-spin-slow opacity-100 group-hover:opacity-0 transition-opacity  duration-300"
@@ -220,9 +220,9 @@
     <section id="Projetos"
         class="w-full flex justify-center relative bg-gradient-to-b from-black via-black to-gray-900">
 
-        <h1 class="text-white text-[50px] xl:text-[70px] absolute my-[5%]">Projetos</h1>
+        <h1 class="text-white text-[50px] md:text-[70px] absolute my-[5%] md:my-[10%] xl:my-[8%]">Projetos</h1>
 
-        <div class="my-[30%]  px-[15%] grid grid-cols-2 grid-rows-3 xl:grid-cols-4 gap-[3%] gap-y-[1%] xl:my-[17%] xl:gap-y-[8%]">
+        <div class="my-[30%]  px-[15%] md:px-[10%] grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[3%] gap-y-[1%] md:gap-y-[2%] md:my-[35%] lg:my-[27%] xl:my-[22%] xl:gap-y-[8%]">
 
             <div
                 class="group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-105">
