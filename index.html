@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Cutive+Mono&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -58,33 +58,45 @@
 <!-- cabeçalho -->
 
 <body class="bg-black">
-    <header class="flex-col my-[5%] lg:my-[0%] lg:py-auto  lg:flex lg:flex-row lg:items-center lg:h-[90px] lg:justify-between mx-[5%]">
+    <header
+        class="flex-col my-[5%] lg:my-[0%] lg:py-auto  lg:flex lg:flex-row lg:items-center lg:h-[90px] lg:justify-between mx-[5%]">
         <div class="flex justify-center items-center bg-black">
             <img class="object-cover w-[300px] h-full lg:w-[200px]" src="./img/logo-ligth.png" alt="logo">
         </div>
         <hr class="lg:hidden">
-        <nav class="lg:flex lg:items-center gap-[50px]">
+        <nav class="lg:flex lg:items-center gap-[30px]">
             <ul class="flex justify-around items-center h-[50px] text-[18px] text-white gap-[10px] md:gap-[50px]">
                 <a href="#Sobre">
                     <li
-                        class="hover:text-[#00ffa3] relative text-white hover:text-[#00ffa3] cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#00ffa3] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#00ffa3] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+                        class="hover:text-[#00ffa3] relative text-white hover:text-[#00ffa3] cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-[#00ffa3] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-[#00ffa3] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
                         Sobre</li>
                 </a>
                 <a href="#Stacks">
                     <li
-                        class="hover:text-[#00ffa3] relative text-white hover:text-[#00ffa3] cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#00ffa3] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#00ffa3] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+                        class="hover:text-[#00ffa3] relative text-white hover:text-[#00ffa3] cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-[#00ffa3] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-[#00ffa3] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
                         Stacks</li>
                 </a>
                 <a href="#Projetos">
                     <li
-                        class="hover:text-[#00ffa3] relative text-white hover:text-[#00ffa3] cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#00ffa3] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#00ffa3] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+                        class="hover:text-[#00ffa3] relative text-white hover:text-[#00ffa3] cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-300 before:absolute before:bg-[#00ffa3] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-300 after:absolute after:bg-[#00ffa3] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
                         Projetos</li>
                 </a>
             </ul>
 
-            <div class="flex justify-center w-full bg-black lg:w-[150px]">
-                <a href="https://wa.me/+55085988786832" target="_blank"><button
-                        class="bg-[#00ffa3] text-black flex items-center justify-center w-[350px] lg:w-[150px] border-2 border-solid border-[#00ffa3] mx-[10px] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[10px] h-[40px] xl:w-full text-[24px] font-semibold lg:text-[19px] duration-300">Contato</button>
+            <div class="flex justify-center w-full bg-black lg:w-[200px]">
+                <a href="https://wa.me/+55085988786832" target="_blank">
+                    <!-- <button
+                        class="bg-black text-[#00ffa3] flex items-center justify-center w-[350px] lg:w-[300px] border-2 border-solid border-[#00ffa3] mx-[10px] rounded-[5px] hover:bg-[#00ffa3] hover:text-black p-[10px] lg:px-[35px] h-[40px] xl:w-full text-[24px] font-semibold lg:text-[19px] duration-300">
+                        <span class="w-0 h-full absolute top-0 left-0 bg-[#00ffa3] duration-200 group-hover:w-full"></span>
+                        <span class="relative z-10">Contato</span>
+                    </button> -->
+
+                    <button class="h-[40px] px-[14px] flex items-center justify-center gap-3 border-2 w-[350px] lg:w-[150px] mx-[10px] p-[10px] lg:px-[35px] text-[24px] font-semibold lg:text-[19px] border-[#00ffa3] rounded-[5px] text-[#00ffa3] text-[12px] relative group hover:text-black duration-300" onclick="mostrarCriar()">
+                <span class="w-0 h-full absolute top-0 left-0 bg-[#00ffa3] duration-200 group-hover:w-full"></span>
+
+                <span class="relative z-10">Contato</span>
+            </button>
+                        
                 </a>
             </div>
         </nav>
@@ -126,26 +138,34 @@
 
     <section id="Sobre" class="flex justify-center items-center bg-black relative animate-fadeIn">
         <img class="h-[670px] w-full opacity-40 lg:h-[470px] xl:h-[500px]" src="img/banner.png" alt="banner">
-        <div class="flex flex-col-reverse lg:flex-row items-center lg:justify-around gap-[25px] lg:gap-[15px] xl:gap-[20%] absolute">
-            <div class="flex flex-col items-center gap-[20px] lg:gap-[15px] mx-[15%] lg:mx-[0%] text-center xl:w-[600px] lg:w-[30%] lg:items-start">
+        <div
+            class="flex flex-col-reverse lg:flex-row items-center lg:justify-around gap-[25px] lg:gap-[15px] xl:gap-[20%] absolute">
+            <div
+                class="flex flex-col items-center gap-[20px] lg:gap-[15px] mx-[15%] lg:mx-[0%] text-center xl:w-[600px] lg:w-[30%] lg:items-start">
                 <div class="flex flex-col ">
-                    <h1 class="text-[50px] text-center lg:text-[65px] font-bold bg-gradient-to-r from-emerald-400 via-lime-500 to-green-700 
+
+                    <h1>
+                        <span id="elemente"></span>
+                    </h1>
+
+                    <h1 class="text-[40px] text-center lg:text-[65px] font-bold bg-gradient-to-r from-emerald-400 via-lime-500 to-green-700 
            bg-clip-text text-transparent w-fit 
-           overflow-hidden whitespace-nowrap 
-           border-r-2 border-[#00ffa3]
-           animate-typing">
-                        Isaías Sousa
+           overflow-hidden whitespace-nowrap border-[#00ffa3]">
+                        <span class="auto-type"></span>
                     </h1>
                 </div>
 
 
-                <p class="text-[15px] text-justify lg:text-start text-white text-shadow-2xl">Olá! Sou Isaías, apaixonado por tecnologia e programação. Gosto de
+                <p class="text-[15px] text-justify lg:text-start text-white text-shadow-2xl">Olá! Sou Isaías, apaixonado
+                    por tecnologia e programação. Gosto de
                     trabalhar em equipe, encarar desafios e estou sempre buscando crescer profissionalmente. Estou
                     empolgado para aprender e contribuir com soluções inovadoras na área tecnologica.
                 </p>
                 <button
-                    class="bg-black text-[#00ffa3] flex items-center justify-center border-2 border-solid border-[#00ffa3] rounded-[5px] hover:bg-[#00ffa3] hover:text-black p-[10px] h-[40px] w-[90%] lg:w-[50%] text-[24px] font-semibold lg:text-[19px] duration-300" onclick="baixarPDF()">Download
-                    CV</button>
+                    class="bg-black text-[#00ffa3] flex items-center justify-center gap-[10px] border-2 border-solid border-[#00ffa3] rounded-[5px] hover:bg-[#00ffa3] hover:text-black p-[10px] h-[40px] w-[90%] lg:w-[50%] text-[24px] font-semibold lg:text-[19px] duration-300"
+                    onclick="baixarPDF()">Currículo
+                    <i class='bx bxs-download mt-[4px]' style='color:#00ffa3'  ></i>
+                </button>
             </div>
             <div class="flex justify-center animate-float">
                 <img id="eu"
@@ -158,9 +178,11 @@
 
     <!-- Stacks -->
 
-    <section id="Stacks" class="h-[90px] lg:h-[80px] py-[5%] xl:py-[5%] md:h-[120px] w-full h-full bg-gradient-to-b from-black via-black to-gray-900">
+    <section id="Stacks"
+        class="h-[90px] lg:h-[80px] py-[5%] xl:py-[5%] md:h-[120px] w-full h-full bg-gradient-to-b from-black via-black to-gray-900">
 
-        <div class="grid grid-cols-3 place-items-center gap-4 md:flex md:items-center md:justify-center h-full mx-[15%] md:mx-[10%] lg:mx-[0%] md:gap-[6%] animate-fadeIn">
+        <div
+            class="grid grid-cols-3 place-items-center gap-4 md:flex md:items-center md:justify-center h-full mx-[15%] md:mx-[10%] lg:mx-[0%] md:gap-[6%] animate-fadeIn">
 
             <div class="flex items-center justify-center relative w-[90px] h-[90px] group">
                 <img class="absolute w-[100px] animate-spin-slow opacity-100 group-hover:opacity-0 transition-opacity  duration-300"
@@ -220,12 +242,13 @@
     <section id="Projetos"
         class="w-full flex justify-center relative bg-gradient-to-b from-black via-black to-gray-900">
 
-        <h1 class="text-white text-[50px] md:text-[70px] absolute my-[5%] md:my-[10%] xl:my-[8%]">Projetos</h1>
+        <h1 class="text-white text-[50px] md:text-[70px] absolute my-[5%] md:my-[10%] lg:my-[8%]">Projetos</h1>
 
-        <div class="my-[30%]  px-[15%] md:px-[10%] grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[3%] gap-y-[1%] md:gap-y-[2%] md:my-[35%] lg:my-[27%] xl:my-[22%] xl:gap-y-[8%]">
+        <div
+            class="my-[30%]  px-[15%] md:px-[10%] grid md:grid-cols-2 lg:grid-cols-3 gap-[3%] gap-y-[1%] md:gap-y-[2%] lg:gap-y-[4%] md:my-[35%] lg:my-[27%] xl:my-[22%] xl:gap-y-[5%]">
 
             <div
-                class="group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-105">
+                class="lg:h-[200px] group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-105">
                 <!-- Texto oculto por padrão, aparece no hover -->
                 <h1
                     class="absolute z-20 text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
@@ -246,7 +269,7 @@
 
                     <a class="z-10" href="https://site-tiamate.vercel.app/" target="_blank">
                         <button
-                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
+                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[3px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
                             Veja Mais
                         </button>
                     </a>
@@ -260,7 +283,7 @@
 
 
             <div
-                class="group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-105">
+                class="lg:h-[200px] group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-105">
                 <!-- Texto oculto por padrão, aparece no hover -->
                 <h1
                     class="absolute z-20 text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
@@ -281,7 +304,7 @@
 
                     <a class="z-10" href="https://isaiassn7.github.io/buscador-de-cep/" target="_blank">
                         <button
-                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
+                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[3px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
                             Veja Mais
                         </button>
                     </a>
@@ -293,7 +316,7 @@
             </div>
 
             <div
-                class="group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-105">
+                class="lg:h-[200px] group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-105">
                 <!-- Texto oculto por padrão, aparece no hover -->
                 <h1
                     class="absolute z-20 text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
@@ -314,7 +337,7 @@
 
                     <a class="z-10" href="https://isaiassn7.github.io/Projeto-Calculadora/" target="_blank">
                         <button
-                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
+                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[3px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
                             Veja Mais
                         </button>
                     </a>
@@ -326,7 +349,7 @@
             </div>
 
             <div
-                class="group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-105">
+                class="lg:h-[200px] group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-105">
                 <!-- Texto oculto por padrão, aparece no hover -->
                 <h1
                     class="absolute z-20 text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
@@ -347,7 +370,7 @@
 
                     <a class="z-10" href="https://isaiassn7.github.io/javascript-fakestore/" target="_blank">
                         <button
-                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
+                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[3px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
                             Veja Mais
                         </button>
                     </a>
@@ -359,7 +382,7 @@
             </div>
 
             <div
-                class="group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-105">
+                class="lg:h-[200px] group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-105">
                 <!-- Texto oculto por padrão, aparece no hover -->
                 <h1
                     class="absolute z-20 text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
@@ -380,7 +403,7 @@
 
                     <a class="z-10" href="https://isaiassn7.github.io/tags-de-de-formulario2/" target="_blank">
                         <button
-                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
+                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[3px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
                             Veja Mais
                         </button>
                     </a>
@@ -392,7 +415,7 @@
             </div>
 
             <div
-                class="group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-105">
+                class="lg:h-[200px] group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-105">
                 <!-- Texto oculto por padrão, aparece no hover -->
                 <h1
                     class="absolute z-20 text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
@@ -413,7 +436,7 @@
 
                     <a class="z-10" href="https://isaiassn7.github.io/html-tags-de-formulario/" target="_blank">
                         <button
-                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
+                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[3px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
                             Veja Mais
                         </button>
                     </a>
@@ -425,7 +448,7 @@
             </div>
 
             <div
-                class="group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-105">
+                class="lg:h-[200px] group border-2 border-[#00ffa3] rounded-[5px] relative overflow-hidden flex items-center justify-center duration-300 hover:scale-105">
                 <!-- Texto oculto por padrão, aparece no hover -->
                 <h1
                     class="absolute z-20 text-white text-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
@@ -446,7 +469,7 @@
 
                     <a class="z-10" href="https://isaiassn7.github.io/Digital-teams/" target="_blank">
                         <button
-                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[5px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
+                            class="z-20 bg-[#00ffa3] text-black flex items-center justify-center border-[1px] border-solid border-[#00ffa3] rounded-[3px] hover:bg-black hover:text-[#00ffa3] p-[4px] h-[25px] mb-[3px] w-full text-[12px] font-semibold duration-300">
                             Veja Mais
                         </button>
                     </a>
@@ -467,7 +490,7 @@
     </section>
 
     <footer class="flex flex-col justify-center items-center pt-[2%]">
-        <div class="flex flex-col xl:flex-row justify-center items-center gap-[20%] xl:gap-[450px]">
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-[20%] lg:gap-[450px]">
             <div class="flex justify-center items-center">
                 <img class="w-[250px]" src="./img/logo-ligth.png" alt="logo">
             </div>
@@ -483,9 +506,9 @@
                 </a>
             </div>
         </div>
-    
-        <hr class="w-[90%] border-t border-gray-600 my-[5%] xl:my-[2%]">
-    
+
+        <hr class="w-[90%] border-t border-gray-600 my-[5%] lg:my-[2%]">
+
         <div class="flex gap-8">
             <!-- WhatsApp -->
             <a href="https://wa.me/+55085988786832" class="w-10 h-10 flex items-center justify-center
@@ -495,7 +518,7 @@
                    rounded-full border border-white" target="_blank">
                 <i class='bx bxl-whatsapp'></i>
             </a>
-    
+
             <!-- Instagram -->
             <a href="https://www.instagram.com/isaias_snunes/" class="w-10 h-10 flex items-center justify-center
                    text-white hover:text-[#00ffa3] text-2xl
@@ -504,7 +527,7 @@
                    rounded-full border border-white" target="_blank">
                 <i class='bx bxl-instagram'></i>
             </a>
-    
+
             <!-- LinkedIn -->
             <a href="https://www.linkedin.com/in/isaias-sousa-2994a6199/" class="w-10 h-10 flex items-center justify-center
                    text-white hover:text-[#00ffa3] text-2xl
@@ -513,7 +536,7 @@
                    rounded-full border border-white" target="_blank">
                 <i class='bx bxl-linkedin-square'></i>
             </a>
-    
+
             <!-- GitHub -->
             <a href="https://github.com/IsaiasSn7" class="w-10 h-10 flex items-center justify-center
                    text-white hover:text-[#00ffa3] text-2xl
@@ -523,10 +546,10 @@
                 <i class='bx bxl-github'></i>
             </a>
         </div>
-        <h1 class="text-white mt-[5%] xl:mt-[3%]">© 2025 Isaías Sousa. Todos os direitos reservados.</h1>
-    
+        <h1 class="text-white mt-[5%] lg:mt-[3%]">© 2025 Isaías Sousa. Todos os direitos reservados.</h1>
+
     </footer>
-    
+
 </body>
 
 <script src="index.js"></script>
