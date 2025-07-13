@@ -9,7 +9,7 @@
 
    var typed = new Typed('.auto-type', {
       strings: ["Isaías Sousa", "Dev Full Stack", ""],
-      typeSpeed: 80,
+      typeSpeed: 60,
       backSpeed: 100,
       loop: true
     });
